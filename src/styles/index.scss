@@ -1,0 +1,154 @@
+@import "./variables.scss";
+@import "./mixin.scss";
+@import "./transition.scss";
+@import "./element-ui.scss";
+@import "./sidebar.scss";
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+[w100],
+.w100 {
+  width: 100%;
+}
+// main-container global css
+.app-container,
+.app-page {
+  padding: 20px;
+}
+*::-webkit-scrollbar {
+  background: rgb(255, 255, 255);
+  height: 8px;
+  width: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: rgb(252, 103, 103);
+  border-radius: 16px;
+}
+[ml] {
+  margin-left: 15px;
+}
+[mt] {
+  margin-top: 15px;
+}
+[mr] {
+  margin-right: 15px;
+}
+[mb] {
+  margin-bottom: 15px;
+}
+[ma] {
+  margin: auto;
+}
+.el-select .el-input {
+  min-width: 100px;
+}
+
+.avatar-uploader .el-upload {
+  border: 1px dashed #d9d9d9;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.avatar-uploader .el-upload:hover {
+  border-color: #409eff;
+}
+.avatar-uploader-icon {
+  font-size: 28px;
+  color: #8c939d;
+  width: 178px;
+  height: 178px;
+  line-height: 178px;
+  text-align: center;
+}
+.avatar {
+  width: 178px;
+  height: 178px;
+  object-fit: cover;
+  display: block;
+}
+[flex] {
+  display: flex;
+}
+[flex-column] {
+  display: flex;
+  flex-direction: column;
+}
+
+[mr-auto] {
+  margin-left: auto !important;
+}
+
+.cli{
+  cursor: pointer;
+}
+.link{
+  color: var(--main);
+  text-decoration: underline;
+}
+:root {
+  /*网站主色*/
+  --main: #4b9fff;
+  /*网站辅助色*/
+  --pink: rgb(216, 56, 42);
+  /*淡淡的浅灰色*/
+  --bg: rgba(243, 243, 243, 0.699);
+  /*引用背景灰色 dedede 比文字灰色略浅，比背景色深、*/
+  --bg1: #dedede;
+  /*文字灰色  比引用背景色深 比导航色浅*/
+  --bg2: #7a7a7a;
+  /*普通字体颜色*/
+  --font: #363636;
+}
